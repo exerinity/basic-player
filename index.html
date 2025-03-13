@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="np">player</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href=".css">
+</head>
+<body>
+    <footer style="font-size: 7px" id="today">...</footer>
+    <br><noscript><h1>Enable JavaScript</h1><br>This <strong>will simply not work</strong> without JavaScript enabled.</noscript>
+    <label for="select">File:</label>
+    <input type="file" id="upload" accept="audio/*, video/*">
+    <br><br>
+    <label for="url">Or a URL:</label>
+    <input type="text" id="url" />
+    <p><span id="np2" title="State of the playback">Playback stopped.</span> <span id="time" title="Time elapsed of track"></span></p>
+    <video id="player" loop width="650"></video>
+    <button onclick="rwd()">← 10s</button>
+    <button onclick="plps()" id="plps">Play</button>
+    <button onclick="fwd()">10s →</button>
+    <button onclick="stop()">Stop </button><br>
+    <button onclick="loop()" id="loop">Loop ON</button>
+    <button onclick="toggle()">Controls</button>
+    <br><br> <label for="speed">Speed</label> <input class="slidingthings" type="range" id="speed" min="0.5" max="2" step="0.1" value="1"> <span id="spd">1</span>x<br>
+    <label for="volume">Volume</label> <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    <span id="vol">1</span><br>
+    <label for="index">Scrub</label> <input type="range" id="index" min="0" max="100" step="1" value="0"> <span id="idx">0</span>s<br>
+    <canvas id="visualizer" width="650" height="200"></canvas>
+    <script src=".js"></script>
+</body>
+</html>

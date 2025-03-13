@@ -1,0 +1,26 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+a, a:visited, a:hover {
+    color: white;
+}
+
+#player {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#visualizer {
+    position: absolute;
+    left: 0;
+    top: calc(20% + 250px);
+    padding: 10px;
+    margin-left: 40px;
+}
