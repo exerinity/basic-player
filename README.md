@@ -1,2 +1,2 @@
 # basic-player
-For previewing content that otherwise forces a download
+Spreads out and improves controls for <video>
