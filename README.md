@@ -1,2 +1,2 @@
 # basic-player
-Spreads out and improves controls for <video>
+Spreads out and improves controls for \<video>
