@@ -155,6 +155,12 @@ function fwd() {
     console.log(`+10s`);
 }
 
+function fix() {
+    console.log("Attempting to fix video/audio desync...");
+    rwd();
+    fwd();
+}
+
 const time = document.getElementById("time");
 player.addEventListener("timeupdate", function () {
     time.innerHTML = `${ft(player.currentTime)} / ${ft(player.duration)}`;
